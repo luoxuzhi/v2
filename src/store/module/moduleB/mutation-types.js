@@ -1,0 +1,3 @@
+export const SET_MODULEB_BONE = 'SET_MODULEB_BONE'
+
+export const SET_MODULEB_BTWO = 'SET_MODULEB_BTWO'
