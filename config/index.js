@@ -11,19 +11,21 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/users': {
-        target: 'http://localhost:3000/',
+        target: 'http://localhost:4000/',
       },
       // 上传时候代理
       '/koaserver': {
-        target: 'http://localhost:3000/',
+        target: 'http://localhost:4000/',
       },
       // 上传完成后页面访问代理
       '/uploads': {
-        target: 'http://localhost:3000/',
+        target: 'http://localhost:4000/',
       },
-
       '/mysql': {
-        target: 'http://localhost:3000/',
+        target: 'http://localhost:4000/',
+      },
+      '/wss': {
+        target: 'http://localhost:4000/',
       },
     },
 

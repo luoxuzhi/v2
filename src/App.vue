@@ -14,12 +14,13 @@
     <router-link to="/table1" tag="button">table1</router-link>
     <router-link to="/arrform" tag="button">arrform</router-link>
     <router-link to="/mysql" tag="button">mysql</router-link>
+    <router-link to="/wss" tag="button">wss</router-link>
     <div class="separeate"></div>
 
     <!-- <div class="left-nav" style="float:left">
       <tms-menu
         style="width:200px"
-        @select="handleSelect" 
+        @select="handleSelect"
         class="tms-menu-vertical-demo">
         <tms-submenu v-for="item in navList" :key="item.path" :index="item.path">
           <span slot="title">{{ item.title }}</span>

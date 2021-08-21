@@ -23,6 +23,7 @@ import Second from '@/components/second/second'
 import Upload from '@/components/upload/upload'
 import ArrForm from '@/components/arrform'
 import Mysql from '@/components/mysql'
+import Wss from '@/components/wss'
 const Watch = () => import('@/components/watch/watch')
 
 Vue.use(Router)
@@ -154,20 +155,21 @@ export default new Router({
       path: '/table',
       component: Table,
     },
-
     {
       path: '/table1',
       component: Table1,
     },
-
     {
       path: '/arrform',
       component: ArrForm,
     },
-
     {
       path: '/mysql',
       component: Mysql,
+    },
+    {
+      path: '/wss',
+      component: Wss,
     },
   ],
 })

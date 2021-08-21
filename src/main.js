@@ -8,6 +8,7 @@ import notify from '@/components/notification/index.js'
 import message from '@/components/message/index.js'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import './utils/index'
 Vue.prototype.bus = new Vue()
 Vue.use(notify)
 Vue.use(message)
@@ -17,7 +18,7 @@ Vue.component('custom-title', {
   render(h) {
     const { level, $slots } = this
     return h(`h${level}`, $slots.default)
-  }
+  },
 })
 
 // import 'themesUI/lib/style.css'
@@ -58,7 +59,7 @@ let app = new Vue({
   // template: '<App/>',
   render(h) {
     return h(App)
-  }
+  },
 })
 
 // console.log('app:', app)
