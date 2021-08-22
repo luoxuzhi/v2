@@ -1,16 +1,4 @@
 {
-  "apps": [
-    {
-      "name": "vue2-demo",
-      "script": "npm run build",
-      "env": {
-        "COMMON_VARIABLE": "true"
-      },
-      "env_production": {
-        "NODE_ENV": "production"
-      }
-    }
-  ],
   "deploy": {
     "production": {
       "user": "root",
