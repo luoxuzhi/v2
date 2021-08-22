@@ -1,1 +1,1 @@
-export const ws = new WebSocket('ws://localhost:4000')
+export const ws = new WebSocket('wss://server.ncuxz.fun')
