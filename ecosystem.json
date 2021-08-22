@@ -1,0 +1,29 @@
+{
+  "apps": [
+    {
+      "name": "vue2-demo",
+      "script": "npm run build",
+      "env": {
+        "COMMON_VARIABLE": "true"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy": {
+    "production": {
+      "user": "root",
+      "host": ["42.193.12.124"],
+      "port": "22",
+      "ref": "origin/master",
+      "repo": "git@github.com:luoxuzhi/vue2-demo.git",
+      "path": "/usr/local/project/vue2-demo/production",
+      "ssh_options": "StrictHostKeyChecking=no",
+      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

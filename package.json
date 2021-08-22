@@ -11,8 +11,8 @@
     "build": "node build/build.js",
     "test": "mocha",
     "istanbul": "istanbul cover _mocha ./test/mocha.js",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "deploy:init": "pm2 deploy ecosystem.json production setup",
+    "deploy": "pm2 deploy ecosystem.json production"
   },
   "dependencies": {
     "axios": "^0.18.0",
