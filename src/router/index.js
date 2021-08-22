@@ -30,6 +30,7 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
+  base: '/vue2',
   routes: [
     {
       path: '/',
