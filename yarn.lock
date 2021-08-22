@@ -1556,17 +1556,7 @@
   "resolved" "https://r.cnpmjs.org/caniuse-db/download/caniuse-db-1.0.30001144.tgz"
   "version" "1.0.30001144"
 
-"caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30001135":
-  "integrity" "sha1-vKD//eEvl+ESejUf7Dv8GXGqOz0="
-  "resolved" "https://r.cnpmjs.org/caniuse-lite/download/caniuse-lite-1.0.30001144.tgz"
-  "version" "1.0.30001144"
-
-"caniuse-lite@^1.0.30000792", "caniuse-lite@^1.0.30000805":
-  "integrity" "sha1-RNo8vKKrbLaqg9G+XTJOF/FByv8="
-  "resolved" "https://r.cnpmjs.org/caniuse-lite/download/caniuse-lite-1.0.30001038.tgz"
-  "version" "1.0.30001038"
-
-"caniuse-lite@^1.0.30000844":
+"caniuse-lite@^1.0.0", "caniuse-lite@^1.0.30000792", "caniuse-lite@^1.0.30000805", "caniuse-lite@^1.0.30000844", "caniuse-lite@^1.0.30001135":
   "integrity" "sha1-vKD//eEvl+ESejUf7Dv8GXGqOz0="
   "resolved" "https://r.cnpmjs.org/caniuse-lite/download/caniuse-lite-1.0.30001144.tgz"
   "version" "1.0.30001144"
@@ -2757,25 +2747,15 @@
   "resolved" "https://r.cnpmjs.org/ejs/download/ejs-2.7.4.tgz"
   "version" "2.7.4"
 
-"electron-to-chromium@^1.2.7", "electron-to-chromium@^1.3.571":
+"electron-to-chromium@^1.2.7", "electron-to-chromium@^1.3.30", "electron-to-chromium@^1.3.47", "electron-to-chromium@^1.3.571":
   "integrity" "sha1-5mcZNvRXGodOsm4ugzqgssC3duA="
   "resolved" "https://r.cnpmjs.org/electron-to-chromium/download/electron-to-chromium-1.3.578.tgz"
   "version" "1.3.578"
 
-"electron-to-chromium@^1.3.30":
-  "integrity" "sha1-074revxCxkyB8gR1WXW3hUd3UwE="
-  "resolved" "https://r.cnpmjs.org/electron-to-chromium/download/electron-to-chromium-1.3.388.tgz"
-  "version" "1.3.388"
-
-"electron-to-chromium@^1.3.47":
-  "integrity" "sha1-5mcZNvRXGodOsm4ugzqgssC3duA="
-  "resolved" "https://r.cnpmjs.org/electron-to-chromium/download/electron-to-chromium-1.3.578.tgz"
-  "version" "1.3.578"
-
-"element-ui@^2.13.2":
-  "integrity" "sha1-WCv0eqqqr+I+oZWPriF6aHrQZEc="
-  "resolved" "https://r.cnpmjs.org/element-ui/download/element-ui-2.13.2.tgz"
-  "version" "2.13.2"
+"element-ui@^2.15.5":
+  "integrity" "sha512-B/YCdz2aRY2WnFXzbTRTHPKZHBD/2KV6u88EBnkaARC/Lyxnap+7vpvrcW5UNTyVwjItS5Fj1eQyRy6236lbXg=="
+  "resolved" "https://registry.npmjs.org/element-ui/-/element-ui-2.15.5.tgz"
+  "version" "2.15.5"
   dependencies:
     "async-validator" "~1.8.1"
     "babel-helper-vue-jsx-merge-props" "^2.0.0"
