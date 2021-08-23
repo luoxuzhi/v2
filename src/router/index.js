@@ -1,29 +1,28 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Notify from '@/components/notify/notify'
-import Layout from '@/components/layout/layout'
-// import Watch from '@/components/watch/watch'
-import Home from '@/components/home/home'
-import Renderless from '@/components/renderless/renderless'
-import Vslot from '@/components/v-slot/'
-import Directives from '@/components/directives/'
-import Table from '@/components/table/'
-import Table1 from '@/components/table1/'
-import Render from '@/components/render/render'
-import More from '@/components/more/more'
-import WatchTwo from '@/components/watch-two/watch-two'
-import WatchOne from '@/components/watch-one/watch-one'
-import Ruleone from '@/components/ruleone/ruleone'
-import Ruletwo from '@/components/ruletwo/ruletwo'
-import Two from '@/components/two/two'
-import Three from '@/components/three/three'
-import Optionthreetwo from '@/components/optionthreetwo/optionthreetwo'
-import Optionthreeone from '@/components/optionthreeone/optionthreeone'
-import Second from '@/components/second/second'
-import Upload from '@/components/upload/upload'
-import ArrForm from '@/components/arrform'
-import Mysql from '@/components/mysql'
-import Wss from '@/components/wss'
+const Notify = () => import('@/components/notify/notify')
+const Layout = () => import('@/components/layout/layout')
+const Home = () => import('@/components/home/home')
+const Renderless = () => import('@/components/renderless/renderless')
+const Vslot = () => import('@/components/v-slot/')
+const Directives = () => import('@/components/directives/')
+const Table = () => import('@/components/table/')
+const Table1 = () => import('@/components/table1/')
+const Render = () => import('@/components/render/render')
+const More = () => import('@/components/more/more')
+const WatchTwo = () => import('@/components/watch-two/watch-two')
+const WatchOne = () => import('@/components/watch-one/watch-one')
+const Ruleone = () => import('@/components/ruleone/ruleone')
+const Ruletwo = () => import('@/components/ruletwo/ruletwo')
+const Two = () => import('@/components/two/two')
+const Three = () => import('@/components/three/three')
+const Optionthreetwo = () => import('@/components/optionthreetwo/optionthreetwo')
+const Optionthreeone = () => import('@/components/optionthreeone/optionthreeone')
+const Second = () => import('@/components/second/second')
+const Upload = () => import('@/components/upload/upload')
+const ArrForm = () => import('@/components/arrform')
+const Mysql = () => import('@/components/mysql')
+const Wss = () => import('@/components/wss')
 const Watch = () => import('@/components/watch/watch')
 
 Vue.use(Router)
