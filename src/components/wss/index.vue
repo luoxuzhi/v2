@@ -28,7 +28,9 @@ export default {
       })
     },
     handleAdd(){
-      axios.get('/wss/add',{params:{num:this.num+1}})
+      axios.get('/wss/add',{params:{num:this.num+1}}).then(res => {
+        this.serverResponse = res.data
+      })
     }
   },
   mounted() {
