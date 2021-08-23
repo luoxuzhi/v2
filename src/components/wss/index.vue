@@ -1,7 +1,7 @@
 <template>
   <div class="ruleone-wrapper" v-loading="loading">
     <div class="handlediv item" @click="handleClick">点击模拟文件上传，后台3s后处理完成并推送前端结果</div>
-    <!-- <div class="handlediv item" @click="handleAdd">初始数字是: {{ num }}，点击数字自增，如果打开了其它浏览器窗口会同步更新</div> -->
+    <div class="handlediv item" @click="handleAdd">初始数字是: {{ num }}，点击数字自增，如果打开了其它浏览器窗口会同步更新</div>
     <div class="item">serverResponse: {{ serverResponse }}</div>
     <div class="item">websocketMsg: {{ websocketMsg }}</div>
   </div>
