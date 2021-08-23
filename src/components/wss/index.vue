@@ -37,7 +37,7 @@ export default {
       this.websocketMsg = msg
       this.loading=false
       if(isCompleted) this.$message.success('文件上传成功')
-      if(num) this.num += 1
+      if(num) this.num = Number(num) // 因为后端JSON.stringfy(data)了
     }
   }
 }
