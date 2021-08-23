@@ -1,22 +1,22 @@
 <template>
   <div class="renderless">
     <no-render v-model="tags">
-      <!-- <div 
-        slot-scope={tags,removeTag,inputAttrs,inputEvents} 
+      <!-- <div
+        slot-scope={tags,removeTag,inputAttrs,inputEvents}
         class="tag-input">
         <span v-for="tag in tags">
-          {{tag}} 
+          {{tag}}
           <span class="remove" @click="removeTag(tag)">x</span>
         </span>
         <input v-bind="inputAttrs" v-on="inputEvents">
       </div> -->
       <template v-slot="{tags,removeTag,inputAttrs,inputEvents}">
-        
-      <div 
-         
+
+      <div
+
         class="tag-input">
-        <span v-for="tag in tags">
-          {{tag}} 
+        <span :key="tag" v-for="tag in tags">
+          {{tag}}
           <span class="remove" @click="removeTag(tag)">x</span>
         </span>
         <input v-bind="inputAttrs" v-on="inputEvents">

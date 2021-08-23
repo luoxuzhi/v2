@@ -1,7 +1,7 @@
 <template>
   <div class="directives">
     <input v-focus:header>
-    <div v-for="(value,key,index) in obj">{{value}}--{{key}}--{{index}}</div>
+    <div :key="key" v-for="(value,key,index) in obj">{{value}}--{{key}}--{{index}}</div>
   </div>
 </template>
 

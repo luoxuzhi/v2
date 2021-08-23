@@ -2,7 +2,7 @@
   <div class="test-wrapper">
     test
     <slot></slot>
-    <button @click="handleClick">click me to test this</button>
+    <el-button @click="handleClick">click me to test this</el-button>
     <p>innerNum:{{innerNum}}</p>
   </div>
 </template>
@@ -13,7 +13,7 @@
       console.log('test created')
     },
     data(){
-      return { 
+      return {
         testdata:99,
         innerNum:null,
         ouboolean:'test' }

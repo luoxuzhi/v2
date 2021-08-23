@@ -16,20 +16,20 @@
         <span v-if="todo.isComplete">√ </span>{{todo.text}}
       </template>
     </todo-list> -->
-    <base-input 
+    <base-input
       @focus="handleFocus"
       label="inputTest" v-model="inputValue">
     </base-input>
 
     <render-func-comp v-show="show"></render-func-comp>
-    <button @click="handleClick">click to set computed value</button>
-    <button @click="useAxios">click to use axios</button>
+    <el-button @click="handleClick">click to set computed value</el-button>
+    <el-button @click="useAxios">click to use axios</el-button>
     <p>{{fullName}}</p>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  import axios from 'axios'
+  // import axios from 'axios'
   import { getBarMessage } from '@/api/api'
   export default{
     data(){
@@ -79,7 +79,6 @@
         // axios.post('/users/post',{name:'postname',id:9999}).then(e=>{console.log(e)})
         // axios({method:'POST',url:'/users/bar',data:{name:'postname',id:9999}}).then(e=>console.log(e))
         getBarMessage().then(res=>console.log(res)).catch(e=>console.log(e))
-
       }
     },
     components:{

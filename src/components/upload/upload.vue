@@ -17,7 +17,7 @@
     <el-button type="primary"  @click="useSeperateInterface">useSeperateInterfaceUpload(单文件、多文件接口不同)</el-button>
     <el-button type="primary"  @click="useTotalInterface">useTotalInterfaceUpload(同一接口上传)</el-button>
     <el-button type="primary" @click="playMusic">点击播放像我这样的人</el-button>
-    
+
     <!-- 本地图片循环渲染要用require -->
     <!-- <div v-for="item in list" :key="item">
       <img class="image" :src="require('../../assets/'+item+'.png')" alt="">
@@ -25,11 +25,11 @@
     <test :out-function="outFunc" @change="outFunc">this is father num change by child by props function:{{num}}</test>
     <div>computed getter and setter review:</div>
     <div>
-      <div>computedValue:<input type="text" v-model="computedValue"></div>
+      <div>computedValue:<el-input type="text" v-model="computedValue"/></div>
       <div>computedValue setter:{{ computedSet }}</div>
     </div>
     <audio src="/uploads/6600_20190913224853.mp3" ref="audio"></audio>
-    
+
   </div>
 </template>
 
@@ -50,7 +50,7 @@
         fileData:'',
         uploadFileUrl:'/koaserver/uploadfile',
         uploadFilesUrl:'/koaserver/uploadfiles'
-      };
+      }
     },
     methods: {
       outFunc(value){
@@ -62,7 +62,7 @@
         return this.num * value
       },
       handleRemove(file, fileList) {
-        console.log(file, fileList);
+        console.log(file, fileList)
       },
       handlePreview(file){},
       // 使用分开的接口
@@ -112,7 +112,7 @@
       isMulFile(){
         return this.$refs.upload.uploadFiles.length > 1
       }
-    } 
+    }
   }
 </script>
 

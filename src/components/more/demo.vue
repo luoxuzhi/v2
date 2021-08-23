@@ -1,7 +1,7 @@
 <template>
 	<div>
 		{{ num }}----
-		<button @click="changenum">click</button>
+		<el-button @click="changenum">click</el-button>
 	</div>
 </template>
 

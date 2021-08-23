@@ -4,15 +4,15 @@
     <div @click="handleClickObj">click me to change obj:{{obj}}</div>
     <div @click="show = !show">toggle component</div>
     <div @click="switchComponent">switchComponent</div>
-    <input type="text" v-model="obj.a">
-    <button @click="appendToBody">click to appen this.$el to body</button>
+    <el-input type="text" v-model="obj.a"/>
+    <el-button @click="appendToBody">click to appen this.$el to body</el-button>
     <test-child></test-child>
     <test v-if="show">
     </test>
     <component :is="type"></component>
-    <button @click="changeItems">click to change items</button>
+    <el-button @click="changeItems">click to change items</el-button>
     <ul>
-      <li v-for="item in items">{{item}}</li>
+      <li :key="item" v-for="item in items">{{item}}</li>
     </ul>
     <p @click="copyArr">copy test</p>
     <router-link to="/watch/one">one</router-link>

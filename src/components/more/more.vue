@@ -2,7 +2,7 @@
 	<div>
 		<!-- <div ref="reftest" class="inline-block">
       <el-select
-        multiple 
+        multiple
         @native-option-click="getOpt"
         v-model="value7" placeholder="请选择">
         <el-option
@@ -15,7 +15,7 @@
     </div> -->
 		<!-- <div class="inline-block">
       <tms-select
-        multiple 
+        multiple
         @native-option-click="getOpt"
         v-model="value7" placeholder="请选择">
         <tms-option

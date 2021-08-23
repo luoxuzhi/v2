@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <a @click="pushToNotify">notify</a>
-    <router-link to="/layout" tag="button">layout</router-link>
-    <router-link to="/watch" tag="button">watch</router-link>
-    <router-link to="/home" tag="button">home</router-link>
-    <router-link to="/renderless" tag="button">renderless</router-link>
-    <router-link to="/render" tag="button">render</router-link>
-    <router-link to="/more" tag="button">more</router-link>
-    <router-link to="/upload" tag="button">upload</router-link>
-    <router-link to="/vslot" tag="button">vslot</router-link>
-    <router-link to="/directives" tag="button">directives</router-link>
-    <router-link to="/table" tag="button">table</router-link>
-    <router-link to="/table1" tag="button">table1</router-link>
-    <router-link to="/arrform" tag="button">arrform</router-link>
-    <router-link to="/mysql" tag="button">mysql</router-link>
-    <router-link to="/wss" tag="button">wss</router-link>
+    <router-link to="/layout" tag="el-button">layout</router-link>
+    <router-link to="/watch" tag="el-button">watch</router-link>
+    <router-link to="/home" tag="el-button">home</router-link>
+    <router-link to="/renderless" tag="el-button">renderless</router-link>
+    <router-link to="/render" tag="el-button">render</router-link>
+    <router-link to="/more" tag="el-button">more</router-link>
+    <router-link to="/upload" tag="el-button">upload</router-link>
+    <router-link to="/vslot" tag="el-button">vslot</router-link>
+    <router-link to="/directives" tag="el-button">directives</router-link>
+    <router-link to="/table" tag="el-button">table</router-link>
+    <router-link to="/table1" tag="el-button">table1</router-link>
+    <router-link to="/arrform" tag="el-button">arrform</router-link>
+    <router-link to="/mysql" tag="el-button">mysql</router-link>
+    <router-link to="/wss" tag="el-button">wss</router-link>
     <div class="separeate"></div>
 
     <!-- <div class="left-nav" style="float:left">
