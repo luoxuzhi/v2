@@ -1,37 +1,37 @@
 <template>
-	<div>
-		{{ num }}----
-		<el-button @click="changenum">click</el-button>
-	</div>
+  <div>
+    {{ num }}----
+    <el-button size="mini" @click="changenum">click</el-button>
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
 import debounce from './debounce'
-export default{
-  data(){
-    return {num:9}
+export default {
+  data() {
+    return { num: 9 }
   },
-  props:{
-    value:''
+  props: {
+    value: ''
   },
   // model:{
   //   prop:'value',
   //   event:'change'
   // },
-  methods:{
-    changenum(){
+  methods: {
+    changenum() {
       this.num++
-      this.$emit('input',this.num)
+      this.$emit('input', this.num)
     }
   },
-  watch:{
-    value(newVal){
+  watch: {
+    value(newVal) {
       this.num = newVal
     }
   },
-  created(){
-    let handler = debounce((newNum)=>console.log(newNum),2000)
-    this.$watch('num',handler)
+  created() {
+    let handler = debounce((newNum) => console.log(newNum), 2000)
+    this.$watch('num', handler)
   }
 }
 </script>

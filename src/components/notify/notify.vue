@@ -1,10 +1,10 @@
 <template>
   <div class="notify-instance">
-    <button @click="notify">autoclose-notify</button>
-    <button @click="notifyUnclose">unautoclose-notify</button>
-    <button @click="autoclosemessage">atuoeclose-message</button>
-    <button @click="unclosemessage">unautoclose-message</button>
-    <button @click="vueFunction">vueFunction,autoclosemessage</button>
+    <el-button size="mini" @click="notify">autoclose-notify</el-button>
+    <el-button size="mini" @click="notifyUnclose">unautoclose-notify</el-button>
+    <el-button size="mini" @click="autoclosemessage">atuoeclose-message</el-button>
+    <el-button size="mini" @click="unclosemessage">unautoclose-message</el-button>
+    <el-button size="mini" @click="vueFunction">vueFunction,autoclosemessage</el-button>
   </div>
 </template>
 
