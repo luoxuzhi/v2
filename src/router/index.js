@@ -169,5 +169,9 @@ export default new Router({
       path: '/wss',
       component: Wss,
     },
+    {
+      path: '/formily',
+      component: () => import('@/components/formily/index.vue'),
+    },
   ],
 })

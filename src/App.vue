@@ -29,33 +29,9 @@ export default {
   },
   data() {
     return {
-      obj: {
-        name: 'wangxiaoming',
-        age: 18,
-      },
       list: ['notify', 'layout', 'watch', 'home', 'render', 'renderless', 'more', 'upload', 'vslot', 'directives', 'table', 'table1', 'arrform', 'mysql', 'wss', 'formily'],
-      navList: [
-        {
-          path: 'one',
-          title: 'one',
-          children: [
-            { path: 'optionone', title: 'optionone' },
-            { path: 'optiontwo', title: 'optiontwo' },
-            {
-              path: 'optionthree',
-              title: 'optionthree',
-              children: [
-                { path: 'optionthreeone', title: 'optionthreeone' },
-                { path: 'optionthreetwo', title: 'optionthreetwo' },
-              ],
-            },
-          ],
-        },
-      ],
-      showTabs: [],
     }
   },
-  mounted() { },
   methods: {
     handleRouteClick(item) {
       this.$router.push(`/${item}`)
