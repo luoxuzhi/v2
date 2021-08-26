@@ -20,6 +20,14 @@
         "libraryName": "element-ui",
         "styleLibraryName": "theme-chalk"
       }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "@formily/element",
+        "libraryDirectory": "esm",
+        "style": true
+      }
     ]
   ]
 }
