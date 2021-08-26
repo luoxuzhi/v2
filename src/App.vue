@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      list: ['notify', 'layout', 'watch', 'home', 'render', 'renderless', 'more', 'upload', 'vslot', 'directives', 'table', 'table1', 'arrform', 'mysql', 'wss', 'formily'],
+      list: ['notify', 'layout', 'watch', 'home', 'render', 'renderless', 'more', 'upload', 'vslot', 'directives', 'table', 'table1', 'arrform', 'mysql', 'wss',],
     }
   },
   methods: {
