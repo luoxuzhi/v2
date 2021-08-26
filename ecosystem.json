@@ -8,8 +8,10 @@
       "repo": "git@github.com:luoxuzhi/v2.git",
       "path": "/usr/local/project/v2/",
       "ssh_options": "StrictHostKeyChecking=no",
-      "pre-deploy": "npm install --registry=https://registry.npm.taobao.org",
+      "pre-setup": "git pull origin master",
+      "post-setup": "ls -la",
       "pre-deploy-local": "echo 'Deploy Begin!'",
+      "pre-deploy": "npm install --registry=https://registry.npm.taobao.org",
       "post-deploy": "npm run build",
       "env": {
         "NODE_ENV": "production"
