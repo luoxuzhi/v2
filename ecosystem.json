@@ -2,7 +2,7 @@
   "deploy": {
     "production": {
       "user": "root",
-      "host": ["42.193.12.124"],
+      "host": ["129.226.170.239"],
       "port": "22",
       "ref": "origin/master",
       "repo": "git@github.com:luoxuzhi/v2.git",
